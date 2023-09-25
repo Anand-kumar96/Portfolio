@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
+  <title>Anand Kumar | Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/d209a12a71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- nav section -->
+  <nav>
+    <a href="#"><img src="./images/Anand2.png" alt="logo" class="logo"></a>
+    <ul id="sideMenu">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fas fa-times" onclick="closeMenu()"></i>
+    </ul>
+    <i class="fas fa-bars" onclick="openMenu()"></i>
+  </nav>
+  <!-- header section -->
+  <div id="header">
+    <div class="container">
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Anand</span> <br> Kumar From India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about section -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/user2.png" alt="user">
+        </div>
+        <div class="about-col-2">
+          <p class="sub-title-para">INTRODUCTION</p>
+          <h1 class="sub-title">About Me</h1>
+          <p class="description">I'm a passionate frontend and backend developer with experience in Html, Css and
+            JavaScript, and expertise in frameworks
+            like React,
+            Node.js.I'm a quick learner who is seeking to find the opportunity to work in a challenging environment that
+            will encourage me to improve and learn new
+            and necessary skills. </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills',event)">Skills</p>
+            <p class="tab-links" onclick="openTab('experience',event)">Experience</p>
+            <p class="tab-links" onclick="openTab('certification',event)">Certification</p>
+            <p class="tab-links" onclick="openTab('education',event)">Education</p>
+          </div>
+          <!------------- skills -------------->
+          <div class="tab-contents active-tabs" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+          <!------------- Experience -------------->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>May 2022 - Sept 2023</span><br>Full Stack Web Development
+                Bootcamp Training at Newton School
+              </li>
+            </ul>
+          </div>
+          <!------------- Certification -------------->
+          <div class="tab-contents" id="certification">
+            <ul>
+              <li><span>June 2023 - August 2023</span><br>Node.js, Express,
+                MongoDB & More: The Complete Bootcamp 2023
+                at Udemy</li>
+              <li><span>March 2023 - May 2023</span><br>React - The Complete Guide
+                2023 (incl. React Router & Redux)
+                at Udemy</li>
+              <li><span>Jul 2022 - Sep 2022</span><br>Data Structures at
+                Coursera</li>
+              <li><span>Jun 2022 - Aug 2022</span><br>Algorithmic Toolbox at
+                Coursera</li>
+            </ul>
+          </div>
+          <!------------- Education -------------->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022 - 2023</span><br>Full Stack Web Development Bootcamp
+                Training at Newton School</li>
+              <li><span>2020 - 2021</span><br>Advance Diploma in Computer
+                Application from Rohtas</li>
+              <li><span>2015 - 2019</span><br>Bachelor of Engineering from UIT
+                Burdwan University Kolkata</li>
+              <li><span>2014</span><br>Intermediate from R.K.S. College Dehri-on-
+                sone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services section -->
+  <div id="services">
+    <div class="container">
+      <p class="sub-title-para">MY SERVICES</p>
+      <h1 class="sub-title">Overview</h1>
+      <div class="services-list">
+        <div class="services-container">
+          <div class="service-items">
+            <img src="./images/web.png" alt="web-development">
+            <h3>Web Developer</h3>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="service-items">
+            <img src="./images/mobile.png" alt="web-development">
+            <h3>React Developer</h3>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="service-items">
+            <img src="./images/backend.png" alt="web-development">
+            <h3>Node Js Developer</h3>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="service-items">
+            <img src="./images/creator.png" alt="web-development">
+            <h3>Content Creator</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio section -->
+  <div id="portfolio">
+    <div class="container">
+      <p class="sub-title-para">MY WORK</p>
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div>
+          <div class="work">
+            <img src="./images/work-1.png" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>This is web based live Social Media App.This is designed to connect users, allowing them
+                to create profiles, share content, interact with each other, and make a new friend.
+              </p>
+              <a href="https://social-media-by-anand.netlify.app/" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/social-media-mern-project" class="gitHub"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#html</p>
+            <p class="tech-stack-2 stacks">#css</p>
+            <p class="tech-stack-3 stacks">#react</p>
+            <p class="tech-stack-4 stacks">#node</p>
+            <p class="tech-stack-5 stacks">#mongodb</p>
+          </div>
+        </div>
+        <div>
+          <div class="work">
+            <img src="./images/work-2.png" alt="">
+            <div class="layer">
+              <h3>Tour App</h3>
+              <p>A comprehensive tour booking platform that allows users to search and book tours, it offers curated
+                recommendations for popular tours with top rated and reviewed by different users.
+              </p>
+              <a href="https://natours-9d20.onrender.com" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/Natours-app" class="gitHub"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#pug</p>
+            <p class="tech-stack-2 stacks">#node</p>
+            <p class="tech-stack-3 stacks">#mongodb</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="work">
+            <img src="./images/work-3.png" alt="">
+            <div class="layer">
+              <h3>Airbnb App</h3>
+              <p>Web-based platform that allows users to search, book, and manage rooms from various providers,
+                providing a
+                convenient, efficient and cheapest rooms for their needs.
+              </p>
+              <a href="https://heartfelt-nasturtium-63589f.netlify.app" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/Airbus-clone---React-Project---r6nfo7m5sayt" class="gitHub"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#html</p>
+            <p class="tech-stack-2 stacks">#css</p>
+            <p class="tech-stack-3 stacks">#javascript</p>
+            <p class="tech-stack-4 stacks">#react</p>
+          </div>
+        </div>
+        <div>
+          <div class="work">
+            <img src="./images/work-4.jpg" alt="">
+            <div class="layer">
+              <h3>Task manager App</h3>
+              <p>This is web based Task Manager App, that allows users to add task along with description with features
+                of updating and deleting the task. It also
+                provide features to drag and drop the task from one state to another state.
+              </p>
+              <a href="https://taskmanager-by-anand-kumar.netlify.app/" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/Task-Manager-App---JS-Placement-Project---krjdfz430504"
+                class="gitHub">
+                <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#html</p>
+            <p class="tech-stack-2 stacks">#css</p>
+            <p class="tech-stack-3 stacks">#javascript</p>
+          </div>
+
+        </div>
+        <div class="show-more">
+          <div class="work">
+            <img src="./images/work-5.png" alt="">
+            <div class="layer">
+              <h3>Calender App</h3>
+              <p>This is web based Calendar App, this is responsive by nature for big and small devices, with the use of
+                frontend technologies, that allow users to filter and set dates. it also provide dark mode features.
+              </p>
+              <a href="https://html-css-javascript-calendar.netlify.app/" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/Calendar" class="gitHub">
+                <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#html</p>
+            <p class="tech-stack-2 stacks">#css</p>
+            <p class="tech-stack-3 stacks">#javascript</p>
+          </div>
+
+        </div>
+        <div class="show-more">
+          <div class="work">
+            <img src="./images/work-6.jpg" alt="">
+            <div class="layer">
+              <h3>Tic Toc Toe </h3>
+              <p>This is web based Tic Toc Toe Game App, this is very interesting and popular app. it provide user to
+                play and pause music and after winning game
+                celebration happen.
+              </p>
+              <a href="https://anandkr-tic-toc-toe.netlify.app/" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/Tic-Toc-Toe" class="gitHub">
+                <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#html</p>
+            <p class="tech-stack-2 stacks">#css</p>
+            <p class="tech-stack-3 stacks">#javascript</p>
+          </div>
+
+        </div>
+        <div class="show-more">
+          <div class="work">
+            <img src="./images/work-7.png" alt="">
+            <div class="layer">
+              <h3>Word Guessing App</h3>
+              <p>This is web based live Word Guessing App, and this is responsive in nature.It allows user to guess the
+                word with in limited guessing chance based on word length.
+              </p>
+              <a href="https://guess-word-project-by-anand.netlify.app/" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/Word_Guessing_Game" class="gitHub">
+                <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#html</p>
+            <p class="tech-stack-2 stacks">#css</p>
+            <p class="tech-stack-3 stacks">#javascript</p>
+          </div>
+
+        </div>
+        <div class="show-more">
+          <div class="work">
+            <img src="./images/work-8.png" alt="">
+            <div class="layer">
+              <h3>AirBus Clone</h3>
+              <p>This is web based Flight Booking App, that allows User to search any flight from
+                available flights along with flight fare just by entering the destination and
+                source, user need to provide all the required details accurately while making the Registration Process
+                and Make
+                the online Payment.
+              </p>
+              <a href="https://airbus-clone-by-anand.netlify.app/" class="liveLink">
+                <i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/Anand-kumar96/Airbus-clone---React-Project---r6nfo7m5sayt" class="gitHub">
+                <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <p class="tech-stack-1 stacks">#html</p>
+            <p class="tech-stack-2 stacks">#css</p>
+            <p class="tech-stack-2 stacks">#tailwind/p>
+            <p class="tech-stack-3 stacks">#javascript</p>
+            <p class="tech-stack-4 stacks">#react</p>
+            <p class="tech-stack-5 stacks">#firebase</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="btn more" onclick="showMore()">see more</div>
+      <div class="btn less" onclick="showLess()">see less</div>
+    </div>
+  </div>
+  <!-------------- contact-section -------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <p class="sub-title-para">GET IN TOUCH</p>
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>anandaryan542@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>+917541850401</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/anand-kumar96/">
+              <i class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="https://www.instagram.com/re_born_01/">
+              <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Anand-kumar96">
+              <i class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com/anandaryan542/">
+              <img src="./images//leetcode.png" alt=""></a>
+          </div>
+          <a href="./images/my-cv.pdf" class="btn btn-2" download>Download CV</a>
+        </div>
+        <div class="contact-right">
+          <p class="sub-title-para">FEEDBACK</p>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" id="submit" class="btn btn-2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright &#169; 2023 India, All rights reserved by Anand.</p>
+  </div>
+  <script src="./App.js"></script>
+
+</body>
+
+</html>
