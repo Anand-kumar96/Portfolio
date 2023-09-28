@@ -254,17 +254,15 @@ nav ul li a:hover::after {
   transition: height 0.5s;
 }
 .layer h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 .layer p {
   background-color: #225a694a;
-  padding: 20px 10px;
+  padding: 10px 10px;
   border-radius: 8px;
   color: rgb(192, 189, 214);
-  font-size: 15px;
-  font-weight: 600;
  
 }
 .layer a {
